@@ -43,7 +43,7 @@ I'm a chinese student of Grade Eight, and my English isn't very well, so the hel
 
 ## Introduction
 
-`WebSpider ` is a lightweight and convenient third-party Python Library Based on `requests` ` BeautifulSoup4 ` ` re `. The` WebSpider` library provides a variety of methods to provide python with simplicity and quickness in terms of crawlers.
+`WebSpider` is a lightweight and convenient third-party Python Library Based on `requests` `BeautifulSoup4` `re`. The`WebSpider` library provides a variety of methods to provide python with simplicity and quickness in terms of crawlers.
 
 ## History update record
 
