@@ -34,11 +34,11 @@
 
 I'm a chinese student of Grade Eight, and my English isn't very well, so the help documentation of `WebSpider` is translated by translation software. Please understand.
 
-# `Webspider` Library `Alpha` Version Description Document(English)
+# `WebSpider` Library `Alpha` Version Description Document(English)
 
 ## Introduction
 
-`Webslider ` is a lightweight and convenient third-party Python Library Based on `requests` ` BeautifulSoup4 ` ` re `. The` WebSpider` library provides a variety of methods to provide python with simplicity and quickness in terms of crawlers.
+`WebSpider ` is a lightweight and convenient third-party Python Library Based on `requests` ` BeautifulSoup4 ` ` re `. The` WebSpider` library provides a variety of methods to provide python with simplicity and quickness in terms of crawlers.
 
 ## History update record
 
@@ -52,7 +52,7 @@ Among the following historical versions, the official version of `WebSpider` (th
 
 ### `Webspider` Library `Alpha` version update record
 
-The `Alpha` version of `Webspider` is a preliminary version developed by 'webspider', which supports very limited functions (the initial version is made in the second day of junior high school).
+The `Alpha` version of `WebSpider` is a preliminary version developed by 'webspider', which supports very limited functions (the initial version is made in the second day of junior high school).
 
 
 
