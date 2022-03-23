@@ -1,3 +1,7 @@
+这是`WebSpider`的简体中文帮助文档，英语版本在下方。
+It's the Simplified Chinese help documentation of `WebSpider`. The English version is  below.
+
+
 # `WebSpider`库`Alpha`版本说明文档（简体中文）
 
 ## 简介
