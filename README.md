@@ -1,4 +1,4 @@
-# `WebSpider`库`Alpha`版本说明文档
+# `WebSpider`库`Alpha`版本说明文档（简体中文）
 
 ## 简介
 `WebSpider`是一款基于`requests` `BeautifulSoup4` `re`三个库的轻量化、便捷化python第三方库，`WebSpider`库提供了多种方法，以提供python在爬虫方面的简便和快捷。
@@ -21,4 +21,43 @@
 | `WebSpider_Alpha220314` | 2022年3月14日 | `IU`;这是`WebSpider`第二个版本，静态页面基础功能已经较为完善，新增了多个函数和一个`HtmlString`类，用于根据其id，类名，快速查找，修复了`WebSpider-Alpha220222`版本中抓取页面部分同标签元素返回值错误的BUG，但在抓取动态页面上仍有所欠缺(注：不支持`path`标签) |
 | `WebSpider_Alpha220323` | 2022年3月23日 |                          这是`WebSpider`的第三个版本，将`HtmlString`更名为`HtmlElement`，以保证翻译的准确性，并且将`HtmlElement`对Html的支持更换为对Html数个元素与Html页面的支持。                           |
 
-### `WebSpider`库`Beta`版本更新记录
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+I'm a chinese student of Grade Eight, and my English isn't very well, so the help documentation of `WebSpider` is translated by translation software. Please understand.
+
+# `Webspider` Library `Alpha` Version Description Document(English)
+
+## Introduction
+
+`Webslider ` is a lightweight and convenient third-party Python Library Based on `requests` ` BeautifulSoup4 ` ` re `. The` WebSpider` library provides a variety of methods to provide python with simplicity and quickness in terms of crawlers.
+
+## History update record
+
+Among the following historical versions, those labeled with `BV` or `BugVersion` are unstable versions of `WebSpider`, which may crash during use. Please use them with caution.
+
+The `IU` or `InternalUse` labels in the following historical versions are the internal versions of `WebSpider`, which will not be released to the public, but this version does exist.
+
+In the following historical versions, the missing version of `WebSpider` with the label of `HL` or `HaveLost` is the version lost due to improper management and other reasons, but this version does exist in history.
+
+Among the following historical versions, the official version of `WebSpider` (the recommended version under the large version number) with the label of `FML` or `formal` has been confirmed to be free of bugs and can be used safely.
+
+### `Webspider` Library `Alpha` version update record
+
+The `Alpha` version of `Webspider` is a preliminary version developed by 'webspider', which supports very limited functions (the initial version is made in the second day of junior high school).
+
+
+
+|      Version number      |  production date  |                                                                                                                                                                                                                                description                                                                                                                                                                                                                                |
+|:------------------------:|:-----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| `WebSpider_Alpha220222`  | February 22, 2022 |                                                                                                                                                                         `BV`; This is the first version of `WebSpider`, and the idea of starting the `WebSpider` project has sprouted since then                                                                                                                                                                          |
+| `WebSpider_Alpha220314 ` |  March 14, 2022   | `IU`; This is the second version of `WebSpider`. The basic functions of static pages have been improved. Several functions and a `HtmlString` class have been added to quickly find and fix the bug in the version of `WebSpider_Alpha220222` that grabs the wrong return value of the same tag element in the page part according to its ID and class name. However, there are still some deficiencies in grabbing dynamic pages (Note: the `path` tag is not supported) |
+| `WebSpider_Alpha220323 ` |  March 23, 2022   |                                                                                                               this is the third version of `WebSpider`. Change the name of `HtmlString` to `HtmlElement` to ensure the accuracy of translation, and replace the support of `HtmlElement` for HTML with the support of several HTML elements and HTML pages                                                                                                                |
