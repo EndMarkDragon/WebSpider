@@ -11,6 +11,9 @@ This is the Simplified Chinese notice of `WebSpider`,the English version is belo
 ## BUG反馈
 如果您在使用过程中发现一些BUG，请您反馈到邮箱`turquoise_boy@foxmail.com`，主题填写`BUGsOfWebSpider`，内容填写您的反馈。
 
+## 翻译
+由于我是一个中国人，在一些注释上，我会使用中文，所以如果(你有学习中文的兴趣and你英文较好)或者(你对中文注释有疑问)，你可以向邮箱`turquoise_boy@foxmail.com`发送邮件，主题填写“Translation”。
+
 ## 垃圾邮件
 **请不要向我的邮箱发送垃圾邮件，垃圾邮件的发送者一律加至黑名单。**
 
@@ -36,6 +39,9 @@ In my GitHub repository called `WebSpider`, there's only the latest version of `
 
 ## BUG feedback
 When you find some BUGs during using the `WebSpider`, please email `turquoise_boy@foxmail.com`, the "Subject" is "BUGsOfWebSpider", the content is your feedback.
+
+##Translation
+As I am a Chinese, I can use Chinese for some notes, so if (you are interested in learning Chinese and your English is better) or (you have questions about Chinese Notes), you can email  `Turquoise_ boy@foxmail.com` Fill in "translation" for the subject.
 
 ## Spams
 **Please don't send spams to my email, all spammer will be added to the blacklist.**
