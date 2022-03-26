@@ -35,10 +35,30 @@ class HtmlElement(str):
     def __init__(self, string):
         self.string = string
 
-    def show(self):
+    def show_lines(self):
+        """
+        show the HTML documentation of the object
+        :return:the HTML documentation of the object
+        """
         return self.string
 
+    def show_line(self, start=0, end=-1, step=1):
+        """
+        show parts of the HTML documentation of the object by lines
+        :param start:the start line
+        :param end:the line after the end line
+        :param step:select every "step" rows
+        :return:the parts of the HTML documentation of the object by lines
+        """
+        string_list = self.string.split("\n")
+        return string_list[start:end:step]
+
     def choose_by_class(self, class_name):
+        """
+        choose the element of the HTML documentation by class name
+        :param class_name:the class name
+        :return:the element of the HTML documentation by class name
+        """
         pattern = "<.* class=\"%s\" .*>?"%class_name
         result = re.search(pattern, self.string)
         if result == None:
@@ -56,6 +76,11 @@ class HtmlElement(str):
             return result_list
 
     def choose_by_id(self, id_name):
+        """
+        choose the element of the HTML documentation by id
+        :param id_name:the id
+        :return:the element of the HTML documentation by class name
+        """
         pattern = "<.* id=\"%s\" .*>?" % id_name
         result = re.search(pattern, self.string)
         if result == None:
@@ -73,6 +98,11 @@ class HtmlElement(str):
             return result_list
 
     def choose_by_name(self, name):
+        """
+        choose the element of the HTML documentation by name
+        :param name:name
+        :return:the element of the HTML documentation by class name
+        """
         pattern = "<.* name=\"%s\" .*>?"%name
         result = re.search(pattern, self.string)
         if result == None:
@@ -90,6 +120,11 @@ class HtmlElement(str):
             return result_list
 
     def choose_by_href(self, href):
+        """
+        choose the element of the HTML documentation by href
+        :param href:href
+        :return:the element of the HTML documentation by class name
+        """
         pattern = "<.* href=\"%s\" .*>?" %href
         result = re.search(pattern, self.string)
         if result == None:
@@ -116,9 +151,17 @@ class WebSpider:
         self.mode = mode
 
     def get_url(self):
+        """
+        get the url of the object
+        :return:the url of the object
+        """
         return self.url
 
     def get_name(self):
+        """
+        get the name of the object
+        :return:the name of the object
+        """
         return self.name
 
     def is_connected():     #是否连接（判断是否与url正常连接）
@@ -136,6 +179,11 @@ class WebSpider:
             return False    #连接异常
 
     def catch_page(self, mode="text"):    #抓取网站（抓取网站页面内容）
+        """
+        catch the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -160,6 +208,11 @@ class WebSpider:
             return False, HtmlElement("")    #读写异常
 
     def catch_head(self, mode="text"):    #抓取网站<head>标签内容
+        """
+        catch the <head> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <head> of the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -196,6 +249,11 @@ class WebSpider:
 
     def catch_title(self, mode="text"):    #抓取网站<title>标签内容
         """
+        catch the <title> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:
+        """
+        """
         #确认网络连接正常
         connected = self.is_connected
         if connected:
@@ -230,6 +288,11 @@ class WebSpider:
             return False, HtmlElement("")    #读写异常
 
     def catch_meta(self, mode="text"):    #抓取网站<meta>标签内容
+        """
+        catch the <meta> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <meta> of the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -266,6 +329,11 @@ class WebSpider:
 
     def catch_span(self, mode="text"):    #抓取网站<span>标签内容
         """
+        catch the <span> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <span> of the page
+        """
+        """
         #确认网络连接正常
         connected = self.is_connected
         if connected:
@@ -300,6 +368,11 @@ class WebSpider:
             return False, HtmlElement("")    #读写异常
 
     def catch_p(self, mode="text"):    #抓取网站<p>标签内容
+        """
+        catch the <p> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <p> of the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -336,6 +409,12 @@ class WebSpider:
 
     def catch_h(self, h_num, mode="text"):    #抓取网站<h>标签内容
         """
+        catch the <h~> of the page
+        :param h_num:the ~
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <h~> of the page
+        """
+        """
         #确认网络连接正常
         connected = self.is_connected
         if connected:
@@ -370,6 +449,11 @@ class WebSpider:
             return False, HtmlElement("")    #读写异常
 
     def catch_table(self, mode="text"):    #抓取网站<table>标签内容
+        """
+        catch the <table> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <table> of the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -406,6 +490,11 @@ class WebSpider:
 
     def catch_div(self, mode="text"):    #抓取网站<div>标签内容
         """
+        catch the <div> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <div> of the page
+        """
+        """
         #确认网络连接正常
         connected = self.is_connected
         if connected:
@@ -440,6 +529,11 @@ class WebSpider:
             return False, HtmlElement("")    #读写异常
 
     def catch_font(self, mode="text"):    #抓取网站<font>标签内容
+        """
+        catch the <font> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <font> of the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -476,6 +570,11 @@ class WebSpider:
 
     def catch_body(self, mode="text"):    #抓取网站<body>标签内容
         """
+        catch the <body> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <body> of the page
+        """
+        """
         #确认网络连接正常
         connected = self.is_connected
         if connected:
@@ -510,6 +609,11 @@ class WebSpider:
             return False, HtmlElement("")    #读写异常
 
     def catch_script(self, mode="text"):    #抓取网站<script>标签内容
+        """
+        catch the <script> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <script> of the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -546,6 +650,11 @@ class WebSpider:
 
     def catch_svg(self, mode="text"):    #抓取网站<svg>标签内容
         """
+        catch the <svg> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <svg> of the page
+        """
+        """
         #确认网络连接正常
         connected = self.is_connected
         if connected:
@@ -580,6 +689,11 @@ class WebSpider:
             return False, HtmlElement("")    #读写异常
 
     def catch_symbol(self, mode="text"):    #抓取网站<symbol>标签内容
+        """
+        catch the <symbol> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <symbol> of the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -616,6 +730,11 @@ class WebSpider:
 
     def catch_main(self, mode="text"):    #抓取网站<main>标签内容
         """
+        catch the <main> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <main> of the page
+        """
+        """
         #确认网络连接正常
         connected = self.is_connected
         if connected:
@@ -650,6 +769,11 @@ class WebSpider:
             return False, HtmlElement("")    #读写异常
 
     def catch_section(self, mode="text"):    #抓取网站<section>标签内容
+        """
+        catch the <section> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <section> of the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -686,6 +810,11 @@ class WebSpider:
 
     def catch_iframe(self, mode="text"):    #抓取网站<iframe>标签内容
         """
+        catch the <iframe> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <iframe> of the page
+        """
+        """
         #确认网络连接正常
         connected = self.is_connected
         if connected:
@@ -721,6 +850,11 @@ class WebSpider:
 
     def catch_a(self, mode="text"):    #抓取网站<a>标签内容
         """
+        catch the <a> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <a> of the page
+        """
+        """
         #确认网络连接正常
         connected = self.is_connected
         if connected:
@@ -755,6 +889,11 @@ class WebSpider:
             return False, HtmlElement("")    #读写异常
 
     def catch_link(self, mode="text"):    #抓取网站<link>标签内容
+        """
+        catch the <link> of the page
+        :param mode:the mode(\"text\" or \"content\") when decoding the text
+        :return:the <link> of the page
+        """
         """
         #确认网络连接正常
         connected = self.is_connected
@@ -793,7 +932,7 @@ def main():
     bilibili = WebSpider("https://www.bilibili.com/", name="bilibili")
     page = bilibili.catch_page()
     if page[0] == True:
-        result = page[1].show()
+        result = page[1].show_lines()
     else:
         result = None
     print(result)
