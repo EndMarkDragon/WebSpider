@@ -41,7 +41,7 @@ In my GitHub repository called `WebSpider`, there's only the latest version of `
 When you find some BUGs during using the `WebSpider`, please email `turquoise_boy@foxmail.com`, the "Subject" is "BUGsOfWebSpider", the content is your feedback.
 
 ##Translation
-As I am a Chinese, I can use Chinese for some notes, so if (you are interested in learning Chinese and your English is better) or (you have questions about Chinese Notes), you can email  `Turquoise_ boy@foxmail.com` Fill in "translation" for the subject.
+As I am a Chinese, I can use Chinese for some notes, so if (you are interested in learning Chinese and your English is better) or (you have questions about Chinese Notes), you can email  `turquoise_boy@foxmail.com` Fill in "translation" for the subject.
 
 ## Spams
 **Please don't send spams to my email, all spammer will be added to the blacklist.**
